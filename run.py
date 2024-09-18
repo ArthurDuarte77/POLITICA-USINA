@@ -97,7 +97,7 @@ def executar_codigo():
     enviar()
 
 # Agendar a execução nos horários especificados
-schedule.every().day.at("13:27").do(executar_codigo)
+schedule.every().day.at("14:16").do(executar_codigo)
 schedule.every().day.at("11:00").do(executar_codigo)
 schedule.every().day.at("14:30").do(executar_codigo)
 schedule.every().day.at("16:00").do(executar_codigo)

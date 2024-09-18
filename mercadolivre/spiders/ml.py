@@ -634,8 +634,20 @@ class MlSpider(scrapy.Spider):
         if not loja:
             return
         location_url = f'https://www.mercadolivre.com.br/perfil/{loja.replace(" ", "+")}'
-
-        yield scrapy.Request(url=location_url, callback=self.parse_location, meta={'url': response.url, 'name': name, 'price': new_price_float, 'qtde_parcelado': "", 'price_parcelado': new_price_float, 'loja': loja, 'tipo': tipo })
+        
+        for i in response.xpath('//section/div[2]/div/div/div/div[1]/div/table/tbody/tr'):
+            if i.xpath('.//th/div[@class="andes-table__header__container"]/text()').get().lower() == "modelo" or i.xpath('.//th/div[@class="andes-table__header__container"]/text()').get().lower() == "linha":
+                modelo = i.xpath('.//td/span/text()').get()
+                if modelo:
+                    modelo = modelo.lower()
+                    if self.option_selected:
+                        if "smart" in self.option_selected.lower():
+                            if "battery" in modelo or "meter" in modelo:
+                                return
+                        if "battery" in response.xpath('/html/body/main/div[2]/div[5]/div[2]/div[2]/div[2]/div[2]/div/div/div/p/text()').get().lower() or "meter" in response.xpath('/html/body/main/div[2]/div[5]/div[2]/div[2]/div[2]/div[2]/div/div/div/p/text()').get().lower():
+                            return
+                        
+        yield scrapy.Request(url=location_url, callback=self.parse_location, meta={'url': response.url, 'name': name, 'price': new_price_float, 'qtde_parcelado': "", 'price_parcelado': new_price_float, 'loja': loja, 'tipo': tipo})
 
 
     def finish(self, total_price, url, nomeFonte, loja, lugar):
