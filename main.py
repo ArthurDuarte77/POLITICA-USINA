@@ -10,98 +10,97 @@ import requests
 import pandas
 from tqdm import tqdm
 
-fonteBob60Marketplace = 316.00;
-fonteBob60Classico = 345.00;
-fonteBob60Premium = 373.00;
+fonteBob60Marketplace = round(351.00 * 0.9, 2);
+fonteBob60Classico = round(383.00 * 0.9, 2);
+fonteBob60Premium = round(414.00 * 0.9, 2);
 
-fonteBob120Marketplace = 428.00;
-fonteBob120Classico = 465.00;
-fonteBob120Premium = 503.00;
+fonteBob120Marketplace = round(476.00 * 0.9, 2);
+fonteBob120Classico = round(517.00 * 0.9, 2);
+fonteBob120Premium = round(559.00 * 0.9, 2);
 
-fonteBob200Marketplace = 550.00;
-fonteBob200Classico = 588.00;
-fonteBob200Premium = 625.00;
+fonteBob200Marketplace = round(611.00 * 0.9, 2);
+fonteBob200Classico = round(653.00 * 0.9, 2);
+fonteBob200Premium = round(694.00 * 0.9, 2);
 
+fonteBaterryMeter50Marketplace = round(424.00 * 0.9, 2);
+fonteBaterryMeter50Classico = round(455.00 * 0.9, 2);
+fonteBaterryMeter50Premium = round(486.00 * 0.9, 2);
 
-fonteBaterryMeter50Marketplace = 382.00;
-fonteBaterryMeter50Classico = 410.00;
-fonteBaterryMeter50Premium = 437.00;
+fonteBaterryMeter70Marketplace = round(355.00 * 0.9, 2);
+fonteBaterryMeter70Classico = round(487.00 * 0.9, 2);
+fonteBaterryMeter70Premium = round(517.00 * 0.9, 2);
 
-fonteBaterryMeter70Marketplace = 410.00;
-fonteBaterryMeter70Classico = 438.00;
-fonteBaterryMeter70Premium = 465.00;
+fonteBaterryMeter100Marketplace = round(539.00 * 0.9, 2);
+fonteBaterryMeter100Classico = round(580.00 * 0.9, 2);
+fonteBaterryMeter100Premium = round(621.00 * 0.9, 2);
 
-fonteBaterryMeter100Marketplace = 485.00;
-fonteBaterryMeter100Classico = 522.00;
-fonteBaterryMeter100Premium = 559.00;
+fonteBaterryMeter120Marketplace = round(600.00 * 0.9, 2);
+fonteBaterryMeter120Classico = round(642.00 * 0.9, 2);
+fonteBaterryMeter120Premium = round(684.00 * 0.9, 2);
 
-fonteBaterryMeter120Marketplace = 540.00;
-fonteBaterryMeter120Classico = 578.00;
-fonteBaterryMeter120Premium = 616.00;
+fonteSmart50Marketplace = round(455.00 * 0.9, 2);
+fonteSmart50Classico = round(487.00 * 0.9, 2);
+fonteSmart50Premium = round(517.00 * 0.9, 2);
 
-fonteSmart50Marketplace = 410.00;
-fonteSmart50Classico = 438.00;
-fonteSmart50Premium = 465.00;
+fonteSmart70Marketplace = round(487.00 * 0.9, 2);
+fonteSmart70Classico = round(517.00 * 0.9, 2);
+fonteSmart70Premium = round(548.00 * 0.9, 2);
 
-fonteSmart70Marketplace = 438.00;
-fonteSmart70Classico = 465.00;
-fonteSmart70Premium = 493.00;
+fonteSmart100Marketplace = round(570.00 * 0.9, 2);
+fonteSmart100Classico = round(611.00 * 0.9, 2);
+fonteSmart100Premium = round(652.00 * 0.9, 2);
 
-fonteSmart100Marketplace = 513.00;
-fonteSmart100Classico = 550.00;
-fonteSmart100Premium = 587.00;
+fonteSmart120Marketplace = round(632.00 * 0.9, 2);
+fonteSmart120Classico = round(674.00 * 0.9, 2);
+fonteSmart120Premium = round(714.00 * 0.9, 2);
 
-fonteSmart120Marketplace = 569.00;
-fonteSmart120Classico = 607.00;
-fonteSmart120Premium = 643.00;
+fonteSmart160Marketplace = round(778.00 * 0.9, 2);
+fonteSmart160Classico = round(818.00 * 0.9, 2);
+fonteSmart160Premium = round(859.00 * 0.9, 2);
 
-fonteSmart160Marketplace = 700.00;
-fonteSmart160Classico = 736.00;
-fonteSmart160Premium = 773.00;
+fonteSmart200MonoMarketplace = round(767.00 * 0.9, 2);
+fonteSmart200MonoClassico = round(808.00 * 0.9, 2);
+fonteSmart200MonoPremium = round(850.00 * 0.9, 2);
 
-fonteSmart200MonoMarketplace = 690.00;
-fonteSmart200MonoClassico = 727.00;
-fonteSmart200MonoPremium = 765.00;
+fonteSmart200Marketplace = round(798.00 * 0.9, 2);
+fonteSmart200Classico = round(838.00 * 0.9, 2);
+fonteSmart200Premium = round(880.00 * 0.9, 2);
 
-fonteSmart200Marketplace = 718.00;
-fonteSmart200Classico = 754.00;
-fonteSmart200Premium = 792.00;
+fonteHeavyDuty220Marketplace = round(865.00 * 0.9, 2);
+fonteHeavyDuty220Classico = round(905.00 * 0.9, 2);
+fonteHeavyDuty220Premium = round(946.00 * 0.9, 2);
 
-fonteHeavyDuty220Marketplace = 779.00;
-fonteHeavyDuty220Classico = 815.00;
-fonteHeavyDuty220Premium = 851.00;
+fonte30Marketplace = round(582.00 * 0.9, 2);
+fonte30Classico = round(624.00 * 0.9, 2);
+fonte30Premium = round(664.00 * 0.9, 2);
 
-fonte30Marketplace = 524.00;
-fonte30Classico = 562.00;
-fonte30Premium = 598.00;
+fonte70Marketplace = round(753.00 * 0.9, 2);
+fonte70Classico = round(805.00 * 0.9, 2);
+fonte70Premium = round(854.00 * 0.9, 2);
 
-fonte70Marketplace = 678.00;
-fonte70Classico = 725.00;
-fonte70Premium = 769.00;
+fonte100Marketplace = round(924.00 * 0.9, 2);
+fonte100Classico = round(986.00 * 0.9, 2);
+fonte100Premium = round(1046.00 * 0.9, 2);
 
-fonte100Marketplace = 832.00;
-fonte100Classico = 887.00;
-fonte100Premium = 941.00;
+ConversorDeTensao30AMarketplace = round(411.00 * 0.9, 2);
+ConversorDeTensao30AClassico = round(452.00 * 0.9, 2);
+ConversorDeTensao30APremium = round(492.00 * 0.9, 2);
 
-ConversorDeTensao30AMarketplace = 370.00;
-ConversorDeTensao30AClassico = 407.00;
-ConversorDeTensao30APremium = 443.00;
+ConversorDeTensao60AMarketplace = round(764.00 * 0.9, 2);
+ConversorDeTensao60AClassico = round(805.00 * 0.9, 2);
+ConversorDeTensao60APremium = round(885.00 * 0.9, 2);
 
-ConversorDeTensao60AMarketplace = 688.00;
-ConversorDeTensao60AClassico = 725.00;
-ConversorDeTensao60APremium = 797.00;
+ConversorDeTensao120AMarketplace = round(995.00 * 0.9, 2);
+ConversorDeTensao120AClassico = round(1036.00 * 0.9, 2);
+ConversorDeTensao120APremium = round(1127.00 * 0.9, 2);
 
-ConversorDeTensao120AMarketplace = 896.00;
-ConversorDeTensao120AClassico = 932.00;
-ConversorDeTensao120APremium = 1014.00;
+ConversorDeTensao240AMarketplace = round(1711.00 * 0.9, 2);
+ConversorDeTensao240AClassico = round(1761.00 * 0.9, 2);
+ConversorDeTensao240APremium = round(1912.00 * 0.9, 2);
 
-ConversorDeTensao240AMarketplace = 1540.00;
-ConversorDeTensao240AClassico = 1585.00;
-ConversorDeTensao240APremium = 1721.00;
-
-CarregadorDeBateriasCharger60AMarketplace = 596.00;
-CarregadorDeBateriasCharger60AClassico = 692.00;
-CarregadorDeBateriasCharger60APremium = 754.00;
+CarregadorDeBateriasCharger60AMarketplace = round(643.00 * 0.9, 2);
+CarregadorDeBateriasCharger60AClassico = round(673.00 * 0.9, 2);
+CarregadorDeBateriasCharger60APremium = round(734.00 * 0.9, 2);
 
         
 #"search_filters": "BRAND=2466336@category=MLB3381@", #MLB2227, 22292586
@@ -845,10 +844,10 @@ def politica():
 
 def executar_codigo():
     politica()
-
+politica()
 # Agendar a execução nos horários especificados
-schedule.every().day.at("07:40").do(executar_codigo)
+# schedule.every().day.at("07:40").do(executar_codigo)
 
-while True:
-    schedule.run_pending()
-    time.sleep(60) 
+# while True:
+#     schedule.run_pending()
+#     time.sleep(60) 
