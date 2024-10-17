@@ -10,97 +10,97 @@ import requests
 import pandas
 from tqdm import tqdm
 
-fonteBob60Marketplace = round(351.00 * 0.9, 2);
-fonteBob60Classico = round(383.00 * 0.9, 2);
-fonteBob60Premium = round(414.00 * 0.9, 2);
+fonteBob60Marketplace = round(351.00 * 0.9, 2) - 0.01;
+fonteBob60Classico = round(383.00 * 0.9, 2) - 0.01;
+fonteBob60Premium = round(414.00 * 0.9, 2) - 0.01;
 
-fonteBob120Marketplace = round(476.00 * 0.9, 2);
-fonteBob120Classico = round(517.00 * 0.9, 2);
-fonteBob120Premium = round(559.00 * 0.9, 2);
+fonteBob120Marketplace = round(476.00 * 0.9, 2) - 0.01;
+fonteBob120Classico = round(517.00 * 0.9, 2) - 0.01;
+fonteBob120Premium = round(559.00 * 0.9, 2) - 0.01;
 
-fonteBob200Marketplace = round(611.00 * 0.9, 2);
-fonteBob200Classico = round(653.00 * 0.9, 2);
-fonteBob200Premium = round(694.00 * 0.9, 2);
+fonteBob200Marketplace = round(611.00 * 0.9, 2) - 0.01;
+fonteBob200Classico = round(653.00 * 0.9, 2) - 0.01;
+fonteBob200Premium = round(694.00 * 0.9, 2) - 0.01;
 
-fonteBaterryMeter50Marketplace = round(424.00 * 0.9, 2);
-fonteBaterryMeter50Classico = round(455.00 * 0.9, 2);
-fonteBaterryMeter50Premium = round(486.00 * 0.9, 2);
+fonteBaterryMeter50Marketplace = round(424.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter50Classico = round(455.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter50Premium = round(486.00 * 0.9, 2) - 0.01;
 
-fonteBaterryMeter70Marketplace = round(355.00 * 0.9, 2);
-fonteBaterryMeter70Classico = round(487.00 * 0.9, 2);
-fonteBaterryMeter70Premium = round(517.00 * 0.9, 2);
+fonteBaterryMeter70Marketplace = round(355.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter70Classico = round(487.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter70Premium = round(517.00 * 0.9, 2) - 0.01;
 
-fonteBaterryMeter100Marketplace = round(539.00 * 0.9, 2);
-fonteBaterryMeter100Classico = round(580.00 * 0.9, 2);
-fonteBaterryMeter100Premium = round(621.00 * 0.9, 2);
+fonteBaterryMeter100Marketplace = round(539.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter100Classico = round(580.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter100Premium = round(621.00 * 0.9, 2) - 0.01;
 
-fonteBaterryMeter120Marketplace = round(600.00 * 0.9, 2);
-fonteBaterryMeter120Classico = round(642.00 * 0.9, 2);
-fonteBaterryMeter120Premium = round(684.00 * 0.9, 2);
+fonteBaterryMeter120Marketplace = round(600.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter120Classico = round(642.00 * 0.9, 2) - 0.01;
+fonteBaterryMeter120Premium = round(684.00 * 0.9, 2) - 0.01;
 
-fonteSmart50Marketplace = round(455.00 * 0.9, 2);
-fonteSmart50Classico = round(487.00 * 0.9, 2);
-fonteSmart50Premium = round(517.00 * 0.9, 2);
+fonteSmart50Marketplace = round(455.00 * 0.9, 2) - 0.01;
+fonteSmart50Classico = round(487.00 * 0.9, 2) - 0.01;
+fonteSmart50Premium = round(517.00 * 0.9, 2) - 0.01;
 
-fonteSmart70Marketplace = round(487.00 * 0.9, 2);
-fonteSmart70Classico = round(517.00 * 0.9, 2);
-fonteSmart70Premium = round(548.00 * 0.9, 2);
+fonteSmart70Marketplace = round(487.00 * 0.9, 2) - 0.01;
+fonteSmart70Classico = round(517.00 * 0.9, 2) - 0.01;
+fonteSmart70Premium = round(548.00 * 0.9, 2) - 0.01;
 
-fonteSmart100Marketplace = round(570.00 * 0.9, 2);
-fonteSmart100Classico = round(611.00 * 0.9, 2);
-fonteSmart100Premium = round(652.00 * 0.9, 2);
+fonteSmart100Marketplace = round(570.00 * 0.9, 2) - 0.01;
+fonteSmart100Classico = round(611.00 * 0.9, 2) - 0.01;
+fonteSmart100Premium = round(652.00 * 0.9, 2) - 0.01;
 
-fonteSmart120Marketplace = round(632.00 * 0.9, 2);
-fonteSmart120Classico = round(674.00 * 0.9, 2);
-fonteSmart120Premium = round(714.00 * 0.9, 2);
+fonteSmart120Marketplace = round(632.00 * 0.9, 2) - 0.01;
+fonteSmart120Classico = round(674.00 * 0.9, 2) - 0.01;
+fonteSmart120Premium = round(714.00 * 0.9, 2) - 0.01;
 
-fonteSmart160Marketplace = round(778.00 * 0.9, 2);
-fonteSmart160Classico = round(818.00 * 0.9, 2);
-fonteSmart160Premium = round(859.00 * 0.9, 2);
+fonteSmart160Marketplace = round(778.00 * 0.9, 2) - 0.01;
+fonteSmart160Classico = round(818.00 * 0.9, 2) - 0.01;
+fonteSmart160Premium = round(859.00 * 0.9, 2) - 0.01;
 
-fonteSmart200MonoMarketplace = round(767.00 * 0.9, 2);
-fonteSmart200MonoClassico = round(808.00 * 0.9, 2);
-fonteSmart200MonoPremium = round(850.00 * 0.9, 2);
+fonteSmart200MonoMarketplace = round(767.00 * 0.9, 2) - 0.01;
+fonteSmart200MonoClassico = round(808.00 * 0.9, 2) - 0.01;
+fonteSmart200MonoPremium = round(850.00 * 0.9, 2) - 0.01;
 
-fonteSmart200Marketplace = round(798.00 * 0.9, 2);
-fonteSmart200Classico = round(838.00 * 0.9, 2);
-fonteSmart200Premium = round(880.00 * 0.9, 2);
+fonteSmart200Marketplace = round(798.00 * 0.9, 2) - 0.01;
+fonteSmart200Classico = round(838.00 * 0.9, 2) - 0.01;
+fonteSmart200Premium = round(880.00 * 0.9, 2) - 0.01;
 
-fonteHeavyDuty220Marketplace = round(865.00 * 0.9, 2);
-fonteHeavyDuty220Classico = round(905.00 * 0.9, 2);
-fonteHeavyDuty220Premium = round(946.00 * 0.9, 2);
+fonteHeavyDuty220Marketplace = round(865.00 * 0.9, 2) - 0.01;
+fonteHeavyDuty220Classico = round(905.00 * 0.9, 2) - 0.01;
+fonteHeavyDuty220Premium = round(946.00 * 0.9, 2) - 0.01;
 
-fonte30Marketplace = round(582.00 * 0.9, 2);
-fonte30Classico = round(624.00 * 0.9, 2);
-fonte30Premium = round(664.00 * 0.9, 2);
+fonte30Marketplace = round(582.00 * 0.9, 2) - 0.01;
+fonte30Classico = round(624.00 * 0.9, 2) - 0.01;
+fonte30Premium = round(664.00 * 0.9, 2) - 0.01;
 
-fonte70Marketplace = round(753.00 * 0.9, 2);
-fonte70Classico = round(805.00 * 0.9, 2);
-fonte70Premium = round(854.00 * 0.9, 2);
+fonte70Marketplace = round(753.00 * 0.9, 2) - 0.01;
+fonte70Classico = round(805.00 * 0.9, 2) - 0.01;
+fonte70Premium = round(854.00 * 0.9, 2) - 0.01;
 
-fonte100Marketplace = round(924.00 * 0.9, 2);
-fonte100Classico = round(986.00 * 0.9, 2);
-fonte100Premium = round(1046.00 * 0.9, 2);
+fonte100Marketplace = round(924.00 * 0.9, 2) - 0.01;
+fonte100Classico = round(986.00 * 0.9, 2) - 0.01;
+fonte100Premium = round(1046.00 * 0.9, 2) - 0.01;
 
-ConversorDeTensao30AMarketplace = round(411.00 * 0.9, 2);
-ConversorDeTensao30AClassico = round(452.00 * 0.9, 2);
-ConversorDeTensao30APremium = round(492.00 * 0.9, 2);
+ConversorDeTensao30AMarketplace = round(411.00 * 0.9, 2) - 0.01;
+ConversorDeTensao30AClassico = round(452.00 * 0.9, 2) - 0.01;
+ConversorDeTensao30APremium = round(492.00 * 0.9, 2) - 0.01;
 
-ConversorDeTensao60AMarketplace = round(764.00 * 0.9, 2);
-ConversorDeTensao60AClassico = round(805.00 * 0.9, 2);
-ConversorDeTensao60APremium = round(885.00 * 0.9, 2);
+ConversorDeTensao60AMarketplace = round(764.00 * 0.9, 2) - 0.01;
+ConversorDeTensao60AClassico = round(805.00 * 0.9, 2) - 0.01;
+ConversorDeTensao60APremium = round(885.00 * 0.9, 2) - 0.01;
 
-ConversorDeTensao120AMarketplace = round(995.00 * 0.9, 2);
-ConversorDeTensao120AClassico = round(1036.00 * 0.9, 2);
-ConversorDeTensao120APremium = round(1127.00 * 0.9, 2);
+ConversorDeTensao120AMarketplace = round(995.00 * 0.9, 2) - 0.01;
+ConversorDeTensao120AClassico = round(1036.00 * 0.9, 2) - 0.01;
+ConversorDeTensao120APremium = round(1127.00 * 0.9, 2) - 0.01;
 
-ConversorDeTensao240AMarketplace = round(1711.00 * 0.9, 2);
-ConversorDeTensao240AClassico = round(1761.00 * 0.9, 2);
-ConversorDeTensao240APremium = round(1912.00 * 0.9, 2);
+ConversorDeTensao240AMarketplace = round(1711.00 * 0.9, 2) - 0.01;
+ConversorDeTensao240AClassico = round(1761.00 * 0.9, 2) - 0.01;
+ConversorDeTensao240APremium = round(1912.00 * 0.9, 2) - 0.01;
 
-CarregadorDeBateriasCharger60AMarketplace = round(643.00 * 0.9, 2);
-CarregadorDeBateriasCharger60AClassico = round(673.00 * 0.9, 2);
-CarregadorDeBateriasCharger60APremium = round(734.00 * 0.9, 2);
+CarregadorDeBateriasCharger60AMarketplace = round(643.00 * 0.9, 2) - 0.01;
+CarregadorDeBateriasCharger60AClassico = round(673.00 * 0.9, 2) - 0.01;
+CarregadorDeBateriasCharger60APremium = round(734.00 * 0.9, 2) - 0.01;
 
         
 #"search_filters": "BRAND=2466336@category=MLB3381@", #MLB2227, 22292586
@@ -818,7 +818,7 @@ def politica():
             "seller": result['seller']['nickname'],
             "title": result['title'],
             "price": result['price'],   
-            "predicted_price": result['price_previsto'],
+            "predicted_price": result['price_previsto'] + 0.01,
             "listing_type": result['listing_type_id'],
             "link": result['permalink'],
         }
